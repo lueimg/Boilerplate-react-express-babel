@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon ./node_modules/.bin/babel-node --presets react,es2015 server.js",
+    "server": "forever ./node_modules/.bin/babel-node --presets react,es2015 express/server.js --config nodemon.config.json",
     "start": "webpack -wd"
   },
   "author": "",
@@ -20,5 +20,8 @@
     "express": "^4.14.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "webpack-livereload-plugin": "^0.10.0"
   }
 }

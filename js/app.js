@@ -1,14 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Container extends React.Component {
+import Hello from './components/Hello';
 
-}
-
-const Component = (props) => {
-    return (
-        <div>Hola</div>
-    )
-}
-
-ReactDOM.render(<Component />, document.getElementById('app'))
+ReactDOM.render(<Hello />, document.getElementById('app'))
