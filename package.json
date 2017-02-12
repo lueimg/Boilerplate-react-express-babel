@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "forever ./node_modules/.bin/babel-node --presets react,es2015 express/server.js --config nodemon.config.json",
+    "server": "forever  ./node_modules/.bin/babel-node --presets react,es2015 express/server.js --config nodemon.config.json",
     "start": "webpack -wd"
   },
   "author": "",
@@ -18,6 +18,8 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.22.0",
     "express": "^4.14.1",
+    "kerberos": "0.0.22",
+    "mongodb": "^2.2.22",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
